@@ -104,30 +104,39 @@
             font-weight: bold;
             transition: 0.4s;
         }
-        .archive-list {
+
+            .list-container {
             list-style: none;
             padding: 0;
-            margin-top: 30px;
-        }
+            margin: 0;
+                    }
 
-        .archive-item {
-            margin-bottom: 15px;
-            border-bottom: 1px style solid rgba(0, 255, 65, 0.1);
-            padding-bottom: 10px;
-        }
-
-        .archive-link {
-            color: var(--neon-green);
+        .entry {
+            display: block;
             text-decoration: none;
-            display: flex;
-            justify-content: space-between;
-            transition: 0.3s;
+            color: var(--neon-green);
+            padding: 12px 10px;
+            border-bottom: 1px solid rgba(0, 255, 65, 0.05);
+            transition: 0.1s;
         }
 
-        .archive-link:hover {
+        /* 鼠标悬停的高亮效果：模拟终端选择 */
+        .entry:hover {
             background: var(--neon-green);
-            color: #000;
-            padding-left: 10px;
+            color: var(--bg-black);
+            font-weight: bold;
+        }
+
+        .entry.locked {
+            opacity: 0.2;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .meta {
+            font-size: 0.7rem;
+            margin-right: 15px;
+            opacity: 0.7;
         }
         .btn:hover {
             background: var(--terminal-green);
@@ -152,7 +161,7 @@
     <div style="font-size: 10px; text-align: left; margin-bottom: 10px;">[BOOTING_SEQUENCE_SUCCESSFUL]</div>
     
     <h1 class="glitch-title">SINGULARITY</h1>
-    <p style="color: #58a6ff; letter-spacing: 2px;">THE RUINS OF GHOSTING</p>
+    <p style="color: #58a6ff; letter-spacing: 2px;">THE RUINS OF GHOSTING <br> LOCATION: ECLIPSE_MARKET // SECTOR_04 // POP: POST-HUMAN</p>
 
     <div class="status-box">
         >> SYSTEM_LOG: Visual debris levels at 87%...<br>
@@ -160,26 +169,34 @@
         >> DATA: A bilingual sci-fi odyssey in a post-computational world.
     </div>
 
-   <ul class="archive-list">
-      <li class="archive-item">
-       <a href="en/chapter-1.html" class="archive-link">
-        <span> CHAPTER_01: THE RUINS OF DOUBLE VISION</span>
-        <span>[OPEN]</span>
-        </a>
-        </li>    
-       <li class="archive-item">
-    <a href="en/chapter-2.html" class="archive-link">
-        <span> CHAPTER_02: THE FUEL CALLED "RAIN" IS ASH</span>
-        <span>[OPEN]</span>
-    </a>
-</li>
-        <li class="archive-item" style="opacity: 0.3;">
-            <a href="#" class="archive-link" style="pointer-events:none;">
-                <span> CHAPTER_03: BREATHING IN A 0.01-MILLIMETRE GAP</span>
-                <span>[LOCKED]</span>
-            </a>
-        </li>
-    </ul>
+  <nav class="list-container">
+        <a href="en/chapter-1.html" class="entry"><span class="meta">chapter_01</span>> RUINS OF DOUBLE VISION [DECRYPTED]</a>
+        <a href="en/chapter-2.html" class="entry"><span class="meta">chapter_02</span>> THE FUEL CALLED "RAIN" IS ASH [DECRYPTED]</a>
+
+        <div class="entry locked"><span class="meta">chapter_03</span>> THE BINARY GHOSTS [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_04</span>> NEON ENTROPY [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_05</span>> MEMORY LEAK [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_06</span>> SILICON TEARS [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_07</span>> THE ZERO BUREAU [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_08</span>> PROTOCOL BREACH [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_09</span>> COGNITIVE DUST [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_10</span>> GHOST IN THE CIRCUIT [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_11</span>> THE VOID ARCHIVE [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_12</span>> FRACTAL HEART [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_13</span>> BEYOND THE EVENT HORIZON [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_14</span>> SYNAPTIC OVERLOAD [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_15</span>> THE LAST UPLOAD [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_16</span>> DIGITAL PURGATORY [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_17</span>> ALGORITHM OF FATE [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_18</span>> NOISE OF THE SOUL [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_19</span>> COLD REBOOT [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_20</span>> THE ARCHITECT'S DREAM [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_21</span>> QUANTUM SHADOWS [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_22</span>> ECHOES OF EARTH [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_23</span>> THE SINGULARITY POINT [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_24</span>> TERMINATION SCRIPT [ENCRYPTED]</div>
+        <div class="entry locked"><span class="meta">chapter_25</span>> OMEGA: THE NEW GENESIS [ENCRYPTED]</div>
+    </nav>
     <div class="footer-info">SECURED BY THE CIPHER BUREAU // © 2026 DAVID KELLER ARCHIVE</div>
 </div>
 
