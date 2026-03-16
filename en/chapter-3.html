@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 03 | THE SINGULARITY ARCHIVE</title>
+    <style>
+        :root { --neon-green: #00ff41; --warning-red: #ff3131; }
+        body {
+            margin: 0; padding: 40px; background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url('cover.jpg') no-repeat center center fixed;
+            background-size: cover; color: #aaa; font-family: 'Courier New', monospace; line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        /* 故障背景动画 */
+        .glitch-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(0deg, rgba(0,255,65,0.03) 0px, rgba(0,255,65,0.03) 1px, transparent 1px, transparent 2px);
+            pointer-events: none; z-index: 100;
+        }
+
+        .terminal-box { max-width: 800px; margin: auto; position: relative; z-index: 10; }
+        
+        h1 { color: var(--neon-green); font-size: 1.5rem; text-transform: uppercase; border-bottom: 1px solid var(--neon-green); padding-bottom: 10px; }
+        .system-status { color: var(--warning-red); font-size: 0.8rem; margin: 20px 0; border: 1px solid var(--warning-red); padding: 10px; }
+
+        .segment { margin-bottom: 60px; animation: fadeIn 1.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .section-marker { color: var(--neon-green); font-weight: bold; font-size: 1.2rem; display: block; margin-bottom: 20px; }
+        
+        /* 模拟记忆燃烧的视觉效果 */
+        .burn-text { color: #fff; text-shadow: 0 0 10px #fff, 0 0 20px var(--neon-green); }
+        
+        .ai-voice { color: #888; border-left: 2px solid #333; padding-left: 20px; margin: 20px 0; font-style: italic; }
+
+        .nav-links { display: flex; justify-content: space-between; margin-top: 100px; border-top: 1px solid #333; padding-top: 20px; }
+        .btn { color: var(--neon-green); text-decoration: none; border: 1px solid var(--neon-green); padding: 10px 25px; transition: 0.3s; }
+        .btn:hover { background: var(--neon-green); color: #000; box-shadow: 0 0 20px var(--neon-green); }
+    </style>
+</head>
+<body>
+
+<div class="glitch-overlay"></div>
+
+<div class="terminal-box">
+    <header>
+        <p style="font-size: 0.7rem; color: var(--neon-green);">// DATA_LOG: DECONSTRUCTION_SEQUENCE_003</p>
+        <h1>Chapter 3: Breathing in the 0.01 Millimeter Crevice</h1>
+        <div class="system-status">
+            [ALERT] EMOTIONAL MASS: 47% // [STATUS] SELF-PERCEPTION_DATA_LEAK
+        </div>
+    </header>
+
+    <div class="segment">
+        <span class="section-marker">1</span>
+        <p>Day twenty-seven. Or day seventy-two. David couldn't tell anymore.</p>
+        <p>He swallowed a mouthful of synthetic nutrient paste. Nothing on his tongue. He knew it was food... But he didn't remember that food should have taste.</p>
+        <p class="burn-text">He had already burned taste.</p>
+        <div class="ai-voice">"System notice: Emotional mass remaining 47%," the AI said. "Estimated arrival at Singularity horizon in thirty cycles."</div>
+    </div>
+
+    <div class="segment">
+        <span class="section-marker">2</span>
+        <p>"Do you know why the Bureau chose you?" Su Qing asked.</p>
+        <p>"Because they calculated that before you reached the Singularity, you'd burn away all 'excess' memories. You'd become a perfect, uncontaminated——"</p>
+        <p><b>"Key,"</b> David finished for her.</p>
+    </div>
+
+    <div class="segment">
+        <span class="section-marker">3</span>
+        <div class="system-status" style="border-color: var(--neon-green); color: var(--neon-green);">
+            [RECOGNITION] HIGH-DIMENSIONAL FRAGMENT DETECTED
+        </div>
+        <p>The frequency of the rainy night. The frequency of the delivery room. The frequency of breakfast. They were all there. Inside that symbol.</p>
+        <p>"Anna," he whispered.</p>
+    </div>
+
+    <div class="segment">
+        <span class="section-marker">4</span>
+        <p>David's hands were trembling.</p>
+        <p>"Burn target," he heard his own voice, very steady. <b>"All self-perception concerning 'David Keller'."</b></p>
+        <p>Who am I?</p>
+        <p>He stared at the face in the photo. No feeling at all. Like looking at a stranger's photo.</p>
+    </div>
+
+    <div class="segment">
+        <span class="section-marker">5</span>
+        <p>The ship moved forward. The sphere of light had condensed into a human form. Not a complete person, but a human outline.</p>
+        <p>He raised his own hand. The two hands, across that crevice, across <span class="burn-text">0.01 millimeters</span> of distance, faced each other.</p>
+        <p>She once existed. And he remembers this.</p>
+    </div>
+
+    <nav class="nav-links">
+        <a href="chapter-2.html" class="btn">< PREV_DATA</a>
+        <a href="index.html" class="btn">TERMINAL_HOME</a>
+        <a href="#" class="btn" style="opacity: 0.3; pointer-events: none;">LOG_04 [LOCKED]</a>
+    </nav>
+</div>
+
+</body>
+</html>
